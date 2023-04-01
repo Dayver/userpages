@@ -5,10 +5,9 @@ Hooks=users.details.tags, ajax
 Tags=users.details.tpl:{USERS_DETAILS_USERPAGES}
 [END_COT_EXT]
 ==================== */
-
 defined('COT_CODE') or die('Wrong URL.');
 
-require_once(cot_langfile('userpages'));
+require_once cot_langfile('userpages');
 
 $user_pages = new XTemplate(cot_tplfile('userpages', 'plug'));
 
